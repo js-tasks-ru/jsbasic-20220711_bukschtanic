@@ -12,11 +12,7 @@
  * @returns {boolean}
  */
 function isValid(name) {
-  if (name !== null && !name.includes(' ') && name.length >= 4  ) {
-          return true
-         } else {      
-          return false
-         }
+  return name !== null && !name.includes(' ') && name.length >= 4
 }
 
 /**
