@@ -9,7 +9,7 @@ function initCarousel() {
   let counter = 1;
 
   if (counter === 1) {
-    carouselArrowLeft.setAttribute("style", "display: none");
+    carouselArrowLeft.style.display = 'none';
   }
 
   carousel.addEventListener("click", function (event) {
@@ -24,7 +24,7 @@ function initCarousel() {
       counter++;
 
       if (counter === slideQuantity) {
-        carouselArrowRight.setAttribute("style", "display: none");
+      carouselArrowRight.style.display = 'none'
         counter--;
       }
 
@@ -42,7 +42,7 @@ function initCarousel() {
     }
 
     if (counter === 0) {
-      carouselArrowLeft.setAttribute("style", "display: none");
+      carouselArrowLeft.style.display = 'none'
       counter++
     }
   });
